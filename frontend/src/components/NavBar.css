@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background-color: #1976d2;
+  color: white;
+  position: sticky;
+  top: 0;
+  width: 100vw;
+  left: 0;
+  box-sizing: border-box;
+  z-index: 1000;
+  margin: 0;
+}
+
+.navbar-left {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.navbar-right {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Adicionado um espaço entre os botões */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  font-size: 1.4em;
+}
+
+.btn-new-task {
+  background-color: white;
+  color: #1976d2;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.btn-new-task:hover {
+  background-color: #f5f5f5;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.btn-logout {
+  background-color: #d32f2f; /* Cor vermelha para o botão de logout */
+  color: white;
+}
+
+.btn-logout:hover {
+  background-color: #b71c1c;
+}

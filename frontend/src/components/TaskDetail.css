@@ -1,0 +1,229 @@
+/* Container principal */
+.taskdetail-container {
+  background-color: #213242;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  color: #fff;
+  width: 100%;
+  max-width: 700px;
+  margin: 20px auto;
+}
+
+/* Título */
+.taskdetail-container h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 2em;
+  color: #007bff;
+}
+
+/* Informações da task */
+.task-info {
+  background-color: #2b3e50;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.task-field {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: flex-start;
+}
+
+.task-label {
+  font-weight: bold;
+  color: #a0a0a0;
+  min-width: 100px;
+  margin-right: 15px;
+}
+
+.task-value {
+  flex: 1;
+  color: #fff;
+  line-height: 1.5;
+}
+
+.task-status {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.status-open {
+  background-color: #007bff;
+  color: white;
+}
+
+.status-completed {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Botões de ação */
+.task-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.btn-action {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  min-width: 120px;
+}
+
+.btn-complete {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-complete:hover {
+  background-color: #218838;
+  transform: translateY(-2px);
+}
+
+.btn-edit {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+.btn-edit:hover {
+  background-color: #e0a800;
+  transform: translateY(-2px);
+}
+
+.btn-delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-delete:hover {
+  background-color: #c82333;
+  transform: translateY(-2px);
+}
+
+.btn-back {
+  background-color: #6c757d;
+  color: white;
+  text-decoration: none;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+}
+
+.btn-back:hover {
+  background-color: #5a6268;
+  color: white;
+  text-decoration: none;
+}
+
+/* Modal de confirmação */
+.confirm-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+}
+
+.modal-content {
+  background-color: #213242;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+.modal-content h3 {
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.btn-modal-cancel {
+  background-color: #6c757d;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-modal-confirm {
+  background-color: #dc3545;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Mensagens de status */
+.status-message {
+  text-align: center;
+  margin: 15px 0;
+  padding: 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.status-success {
+  background-color: #28a745;
+  color: white;
+}
+
+.status-error {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .taskdetail-container {
+    padding: 30px 20px;
+    margin: 15px;
+  }
+  
+  .task-actions {
+    flex-direction: column;
+  }
+  
+  .btn-action {
+    width: 100%;
+  }
+  
+  .task-field {
+    flex-direction: column;
+  }
+  
+  .task-label {
+    margin-bottom: 5px;
+    min-width: auto;
+  }
+}

@@ -1,0 +1,123 @@
+/* Container principal da lista de tarefas */
+.task-list-container {
+    background-color: #213242;
+    padding: 40px 60px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+    color: #fff;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+/* Título */
+.task-list-container h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 2em;
+}
+
+/* Lista */
+.task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Item da lista */
+.task-item {
+    background-color: #2b3e50;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+    transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+/* Efeitos de hover e link */
+.task-item:hover {
+    background-color: #344b61;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.task-link {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Título da tarefa */
+.task-title-item {
+    flex-grow: 1;
+    color: #4da6ff;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* Status da tarefa */
+.task-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+
+.status-completed {
+    background-color: #4caf50;
+    color: white;
+}
+
+.status-open {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Estado de carregamento/erro */
+.status-message {
+    text-align: center;
+    font-size: 1em;
+    margin-top: 20px;
+    color: #f1f1f1;
+}
+
+.status-error {
+    color: #ff6b6b;
+}
+
+/* Mensagem de nenhuma tarefa encontrada */
+.no-tasks-message {
+    text-align: center;
+    font-size: 1.2em;
+    margin: 40px 0;
+    color: #a0a0a0;
+    padding: 30px;
+    background-color: #2b3e50;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.no-tasks-icon {
+    font-size: 3em;
+    margin-bottom: 15px;
+    color: #007bff;
+    opacity: 0.7;
+}
+
+.no-tasks-text {
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1.1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .task-list-container {
+        padding: 30px 20px;
+        margin: 15px;
+    }
+}

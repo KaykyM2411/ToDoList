@@ -1,0 +1,130 @@
+/* Container principal da lista de tarefas */
+.tasklist-container {
+  background-color: #213242;
+  padding: 40px 60px;
+  border-radius: 12px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+  color: #fff;
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+/* Título */
+.tasklist-container h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+/* Lista */
+.tasklist-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Item da lista - AGORA CLICÁVEL */
+.tasklist-container li {
+  background-color: #2b3e50;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer; /* Indica que é clicável */
+}
+
+/* Efeitos de hover para feedback visual */
+.tasklist-container li:hover {
+  background-color: #344b61;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Efeito de clique */
+.tasklist-container li:active {
+  transform: translateY(0);
+}
+
+/* Título da tarefa */
+.tasklist-container li h3 {
+  margin: 0 0 10px;
+  font-size: 1.3em;
+  color: #4da6ff;
+  transition: color 0.2s ease;
+}
+
+/* Destacar título ao passar o mouse */
+.tasklist-container li:hover h3 {
+  color: #80c1ff;
+}
+
+/* Descrição e prazo */
+.tasklist-container li p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  color: #ccc;
+}
+
+/* Estado de carregamento/erro */
+.status-message {
+  text-align: center;
+  font-size: 1em;
+  margin-top: 20px;
+  color: #f1f1f1;
+}
+
+/* Mensagem de nenhuma tarefa encontrada */
+.no-tasks-message {
+  text-align: center;
+  font-size: 1.2em;
+  margin: 40px 0;
+  color: #a0a0a0;
+  padding: 30px;
+  background-color: #2b3e50;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* Ícone */
+.no-tasks-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+  color: #007bff;
+  opacity: 0.7;
+}
+
+/* Texto da mensagem */
+.no-tasks-text {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .tasklist-container {
+    padding: 30px 20px;
+    margin: 15px;
+  }
+  
+  .no-tasks-message {
+    padding: 20px;
+    margin: 30px 0;
+  }
+  
+  .no-tasks-icon {
+    font-size: 2.5em;
+  }
+  
+  /* Ajustes para mobile nos itens clicáveis */
+  .tasklist-container li {
+    padding: 15px;
+  }
+  
+  .tasklist-container li h3 {
+    font-size: 1.2em;
+  }
+}
