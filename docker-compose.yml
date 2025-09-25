@@ -39,12 +39,13 @@ services:
     ports:
       - "3001:3001"
     volumes:
-      - ./frontend:/app 
+      - ./frontend:/app
+      - /app/node_modules
     depends_on:
-      - backend 
+      - backend
     environment:
       - REACT_APP_BACKEND_URL=http://localhost:3000
       - PORT=3001
-      
+
 volumes:
   postgres_data:
